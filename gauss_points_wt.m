@@ -1,5 +1,8 @@
 function [gauss_points,X1,Y1,weight,p,pt]=gauss_points_wt(nx,order,level,x1,y1,cx,cy)
-
+%where nx is number of sides of polygon
+% order is 2 for quadratic shaper function
+% x1,y1 are the nodal coordinates
+% cx,cy is coordinate of centroid of polygon
 % First level integration points
 if level ==1
     pt=1;
